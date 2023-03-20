@@ -16,9 +16,29 @@ public class main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Sumacion.sumacion1(1, 10);
-        Sumacion.sumacion2(5, 10);
-        Sumacion.sumacion3(7, 10);
+        sumacion1(1, 10);
+        sumacion2(5, 10);
+        sumacion3(7, 10);
+    }
+
+    public static void sumacion1 (int a, int b) {
+        for (int i= a; i <= b; i++) {
+            System.out.println(a);
+            a++;
+        }
+    }
+    public static void sumacion2 (int a, int b) {
+        while (a <= b) {
+            System.out.println(a);
+            a++;
+        }
+    }
+    public static void sumacion3 (int a, int b) {
+        if (a <= b) {
+            System.out.println(a);
+            a++;
+            sumacion3(a, b);
+        }
     }
     
 }
